@@ -1,0 +1,79 @@
+#background{
+background-color: antiquewhite;
+height: 100vh;
+}
+
+#box1{
+background-color: salmon;
+height: 200px;
+width: 200px;
+
+}
+
+#box2{
+background-color: blueviolet;
+height: 200px;
+width: 200px;
+
+}
+
+#box3{
+background-color: darkgoldenrod;
+height: 200px;
+width: 200px;
+
+}
+
+#section-3{
+    background-color: azure;
+    height: 100vh;
+}
+
+#box-4{
+    background-color: brown;
+    height:150px;
+    width:150px;
+    animation-name:move-box;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    position:relative;
+
+}
+
+@keyframes move-box {
+
+    0%{
+        left:0px;
+
+    }
+    50%{
+        top:0px;
+        left:800px;
+    }
+
+    100%{
+        left:800px;
+        top:400px;
+    }
+}
+
+#section-4{
+    background-color: violet;
+    height: 100vh;
+}
+
+#box-5{
+    background-color: lightskyblue;
+    height:150px;
+    width:150px;
+    transition-property: background-color height width;
+    transition-duration: 3s;
+
+}
+
+#box-5:hover{
+background-color: red;
+height:250px;
+width:250px;
+transform: rotate(45deg);
+}
